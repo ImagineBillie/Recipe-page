@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --White: #ffffff; /*bg card*/
+
+    --Stone-100: #f3e6d8; /*bg body*/
+    --Stone-150: #e4ded8; /*??*/
+    --Stone-600: #5f574e; /*p*/
+    --Stone-900: #302d2c; /*h1*/
+    
+     --Brown-800: #854632; /*h2*/
+    
+    --Rose-800: #7b284f; /*h3 preptime*/
+    --Rose-50: #fff5fa; /*bg preptime*/
+    
+    
+    --fw4: 400;
+    --fw6: 600;
+    --fw7: 700;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+  
+  @media (max-width: 100vw) {
+    html, body {
+        height: 100%;
+      }
+      
+    body{
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0px;
+        height: 100vh;
+        background-color: var(--Stone-100);
+        font-family: "Outfit";
+        padding: 1rem;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        padding: 1.5rem;
+        background-color: var(--White);
+        border-radius: 12px;
+        width: 50%;
+    }
+
+        .card h1{
+            color: var(--Stone-900);
+            font-family: "Young Serif";
+            line-height: initial;
+        }
+
+        .card h2{
+            color: var(--Brown-800);
+            font-family: "Young Serif";
+            line-height: 150%;
+        }
+
+        .card p{
+            color: var(--Stone-600);
+        }
+
+    .card-image img{
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .title{
+        padding: 30px 0px;
+    }
+
+    .prep-time{
+        background-color: var(--Rose-50);
+        border-radius: 12px;
+        width: 100%;
+        margin: 30px 0px;
+        padding: 1.5rem;
+    }
+
+        .prep-time h3{
+            color: var(--Rose-800);
+        }
+
+        .prep-time li {
+            color: var(--Stone-600);
+            margin-left: 20px;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        .prep-time li::marker {
+            color: var(--Rose-800);
+        }
+
+    .ingredients{
+        margin-bottom: 30px;
+    }
+
+        .ingredients li {
+            color: var(--Stone-600);
+            margin-left: 20px;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        .ingredients li::marker {
+            color: var(--Brown-800);
+        }
+
+    .instruction{
+        margin: 30px 0px;
+    }
+
+        .instruction li {
+            color: var(--Stone-600);
+            margin-left: 20px;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        .instruction li::marker {
+            color: var(--Brown-800);
+            font-weight: var(--fw7);
+        }
+    
+    .nutrition h2 {
+        padding: 30px 0 20px;
+    }
+
+    .nutrition-grid {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        row-gap: 1px;    /* 1px gap becomes your “divider” line */
+        background: #d5d3d3;/* gap color */
+        width: 90%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    
+    .nutrition-grid > * {
+        background: #fff;/* white “cells” above the gap */
+    }
+
+    /* typography */
+    .label {
+        color: var(--Stone-600);
+        font-weight: var(--fw4);
+        padding: 10px 0px 10px 30px;
+    }
+    
+    .value {
+        color: var(--Brown-800);
+        font-weight: var(--fw7);
+        text-align: left;
+    }
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: var(--Stone-900);
+        padding: 1rem 0;
+      }
+
+    .attribution a { 
+        color: var(--Rose-800) 
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: var(--White);
+        padding: 0px;
+    }
+
+    .card-image img {
+        display: block;             
+        width: calc(100% + 4rem);
+        margin: 0 -2rem;
+        border-radius: 0;          
+      }
+
+    .card {
+      width: 100vw;
+      border-radius: 0px;
+      padding: 0px 2rem;
+    }
+  
+    .nutrition-grid {
+      width: 100%;
+      grid-template-columns: 60% 40%;
+    }
+  }
