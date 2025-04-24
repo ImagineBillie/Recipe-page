@@ -5,12 +5,13 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Screenshot
 
 ![Desktop](./assets/screenshots/1.png)![](./assets/screenshots/2.png)
-![mobile](./assets/screenshots/3.png)![](./assets/screenshots/4.png)
+![mobile](./assets/screenshots/3.png)
+![](./assets/screenshots/4.png)
 
 ### Links
 
-- Solution URL: [](https://github.com/ImagineBillie/Recipe-page.git)
-- Live Site URL: [](https://imaginebillie.github.io/Recipe-page/)
+- Solution URL: https://github.com/ImagineBillie/Recipe-page.git
+- Live Site URL: https://imaginebillie.github.io/Recipe-page/
 
 ## My process
 
